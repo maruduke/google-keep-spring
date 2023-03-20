@@ -36,10 +36,6 @@ public class apiController {
 
         note.setId(NoteId);
         String json = noteService.updateNote(NoteId, note);
-        System.out.println(note.getId());
-        System.out.println(note.getTitle());
-        System.out.println(note.getBody());
-        System.out.println(note.getBackgroundColor());
 
         return json;
     }
